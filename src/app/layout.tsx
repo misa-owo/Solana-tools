@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+import { Inter } from 'next/font/google'
+import Image from "next/image";
+const inter = Inter({
+  subsets: ['latin'], // Ensure language support
+  variable: '--font-inter', // Custom variable to use with Tailwind
+  display: 'swap', // Optimize font loading
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,10 +22,83 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className}  antialiased min-w-screen min-h-screen bg-[#0e1012]`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
+}
+
+const navLinks = [
+  { name: "Explore Tools" },
+  { name: "Categories" },
+  { name: "Alternatives" },
+  { name: "Guides" },
+  { name: "Blogs" },
+]
+
+
+const Header = () => {
+  return (
+    <nav className="flex items-center px-[10%] fixed
+      relative
+      text-white
+      before:inset-0
+      before:bottom-[-20px]
+      before:backdrop-blur-[16px]
+      before:mask-gradient-to-b
+      before:mask-black
+      before:mask-to-transparent
+      before:transform
+      border-b-[1px]
+      border-[#ffffff14]
+      backdrop-blur-md
+      shadow-xl
+      py-2
+      z-2
+      before:pointer-events-none">
+      <div className="w-3/12 flex justify-end">
+        <Image src={"/blast.avif"} width={35} height={28} alt="Logo" />
+      </div>
+      <div className="flex justify-center gap-8 items-center w-6/12">
+        {navLinks.map(navLink => <a className="text-xs cursor-pointer">{navLink.name}</a>)}
+      </div>
+      <div className="w-3/12">
+
+      </div>
+    </nav>)
+}
+
+const Footer = () => {
+  return (
+    <footer className=" flex  px-[10%] pt-[10%] pb-10 text-xs text-[#abadaf] bg-[#0e1012]">
+      <div className="w-1/2 ]">
+        <Image src={"/blast.avif"} width={35} height={35} alt="logo" />
+        <p className=" mt-3">Your Complete Guide to Solana Tools and Dapps</p>
+        <div className="flex gap-3 mt-4">
+            <a href="" target="_blank">
+              <Image src={"socials/x.svg"} width={30} height={30} alt="x" />
+            </a>
+        </div>
+      </div>
+      <div className="w-1/4">
+        <p className="text-sm font-bold text-white">Popular</p>
+        <p className="mt-3">Telegram trading bots</p>
+        <p className="mt-2">Airdrops</p>
+        <p className="mt-2">VPS</p>
+        <p className="mt-2">Trading Bots</p>
+        <p className="mt-2">Token Analysis</p>
+      </div>
+      <div className="w-1/4">
+        <p className="font-bold text-sm text-white">Popular</p>
+        <p className="mt-3">How to trade solana meme coings</p>
+        <p className="mt-2">How to get started with BonkBot?</p>
+        <p className="mt-2">How to get started with Photon</p>
+        <p className="mt-2">How to get started with Trojan on Solana</p>
+      </div>
+    </footer>
+  )
 }

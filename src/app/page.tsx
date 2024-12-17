@@ -1,101 +1,142 @@
+"use client"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useMemo, useState } from "react";
+import categories from "../../data/categories";
 import Image from "next/image";
+import Project from "@/components/ui/project";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const filteredProjects = useMemo(() => {
+    return categories.find(category => category.title === selectedCategory)?.projects || [];
+  }, [selectedCategory])
+
+
+
+  return (
+    <div className="">
+      <div className="relative">
+        <div className="min-w-screen min-h-[50vh] spiral block relative -top-[20vh]">
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="w-full  text-white text-center text-sm flex flex-col items-center absolute top-0">
+          <p className="mt-[10%] bg-[#ffffff14] w-fit m-auto px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
+          <h1 className="mt-10 text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]"> Your Complete Guide to Solana Tools and Dapps
+          </h1>
+          <h2 className="text-[#abadaf] mt-5 text-xl w-5/12">Your Ultimate Source for the Latest Solana Tools and dApps to Supercharge Your Blockchain Experience</h2>
+        </div>
+      </div>
+      <div className="w-7/12 m-auto mt-[10%]">
+        <div className="rounded-xl overflow-hidden flex items-center  border-[1px] border-solid border-[#ffffff14]">
+          <Input className="border-none py-2 text-[#abadaf] focus-visible:ring-0" >
+          </Input>
+          <Button className="w-3/12 rounded-xl py-5">Search</Button>
+        </div>
+        <div className="text-white mt-5 flex flex-wrap justify-start gap-x-2 gap-y-2 ">
+          {categories.map(category => <p
+            key={category.title}
+            onClick={() => setSelectedCategory(category.title)}
+            className={`bg-[#ffffff14] cursor-pointer w-fit m-auto px-2 text-xs font-semibold  py-1  rounded-xl  
+            border-2 
+            border-[${selectedCategory === category.title ? "#8952e0" : "#ffffff14"}] `}>
+            <span className="mr-2">{category.icon}</span>{category.title}
+          </p>)}
+        </div>
+      </div>
+
+      <div className="flex justify-between mt-10 flex-wrap gap-2 gap-4 pb-[10%] px-[10%]">
+        {filteredProjects.map(project => {
+          return (
+            <Project key={project.name} {...project} />
+          )
+        })}
+      </div>
+      <div className="relative overflow-hidden block fit-content px-[10%]">
+        <div className="w-screen min-h-screen spiral block absolute -top-[50vh]">
+        </div>
+        <div >
+          <GuideSection />
+          <ToolsSection />
+          <div className="mt-[5%] block flex relative text-white w-full flex items-center  justify-between bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-xl p-12 shadow-xl">
+            <div>
+              <p className="text-4xl font-bold">Stay in touch</p>
+              <p className="text-[#abadaf] text-sm mt-2 "> Get  updates regarding tools and platforms</p>
+            </div>
+            <Button className="rounded-xl text-white shadow-xl ml-20 bg-[#8952e0]">Subscribe</Button>
+          </div>
+        </div>
+      </div>
     </div>
   );
+}
+
+
+const GuideSection = () => {
+  return (
+    <>
+      <div className="mt-[5%] block  relative text-white w-full   bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-xl p-12 shadow-xl">
+        <div>
+          <p className="border-[1px] border-solid text-xs w-fit px-4 py-1 text-[#d3bef4] border-[#8952e0] rounded-xl">Guides</p>
+          <p className="text-4xl font-bold mt-4">Everything you need to trade on Solana</p>
+          <p className="text-[#abadaf] text-sm mt-2 "> Step-by-step guide for beginners</p>
+        </div>
+        <Button className="mt-3 bg-[#8952e0] mt-6">Explore our guides <span><ArrowRight /></span></Button>
+      </div>
+      <div className="flex mt-10 pb-[5%] gap-5 flex-wrap justify-center">
+        <a href="" className="relative text-white w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
+          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
+        </a>
+        <a href="" className="relative text-white w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
+          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
+        </a>
+        <a href="" className="relative text-white w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
+          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
+        </a>
+        <a href="" className="relative text-white w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
+          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
+        </a>
+
+      </div>
+    </>
+
+  )
+}
+
+const ToolsSection = () => {
+  return (
+    <>
+      <div className="w-full text-white text-sm mt-[5%] text-white">
+        <p className="border-[1px] border-solid text-xs w-fit px-4 py-1 text-[#d3bef4] border-[#8952e0] rounded-xl">Tools</p>
+        <p className="mt-2 text-3xl font-bold mt-4">Find Solana tools for your needs</p>
+        <p className="mt-1 text-3xl font-bold">Popular tools categories</p>
+        <Button className="mt-3 bg-[#8952e0]">Explore our tools <span><ArrowRight /></span></Button>
+      </div>
+      <div className="flex mt-10 pb-[5%] gap-2">
+        <a href="" className="relative text-white w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
+          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
+        </a>
+        <a href="" className="relative text-white w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
+          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
+        </a>
+        <a href="" className="relative text-white w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
+          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
+        </a>
+        <a href="" className="relative text-white w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
+          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
+        </a>
+
+      </div>
+    </>
+
+  )
 }
