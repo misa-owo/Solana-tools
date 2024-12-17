@@ -5,17 +5,42 @@ export interface ICategory {
     title: string,
     icon: string,
     slug: string,
-    popular?: boolean
+    popular?: boolean,
+    description: string
 }
 const categories: ICategory[] = [
-    { projects: [], title: 'All', icon: '♾️', slug: 'all' },
-    { projects: all, title: 'Bridge', icon: '🌉', slug: 'bridge',  popular: true},
-    { projects: [], title: 'Caller bots (AI)', icon: '🚨', slug: 'caller-bots-ai' , popular: true},
-    { projects: [], title: 'Casinos & Gambling', icon: '🎰', slug: 'casinos-gambling' , popular: true},
-    { projects: all, title: 'Contract scanners', icon: '🕵️', slug: 'contract-scanners' },
-    { projects: all, title: 'DePIN', icon: '🌐', slug: 'depin' },
-    { projects: all, title: 'Derivs/Perps', icon: '♾️', slug: 'derivs-perps' , popular: true},
-    { projects: all, title: 'DEXs', icon: '💱', slug: 'dexs' },
+    {
+        description: "Portfolio trackers on Solana simplify managing your digital assets by providing real-time insights into token balances, transaction history, and asset performance. These tools allow users to track cryptos, memecoins, NFTs, and more, all in one place. With features like multichain support and intuitive dashboards, portfolio trackers make it easy for beginners and experts to stay informed and organized in Solana’s dynamic ecosystem."
+        , projects: [], title: 'All', icon: '♾️', slug: 'all'
+    },
+    {
+        description: "Portfolio trackers on Solana simplify managing your digital assets by providing real-time insights into token balances, transaction history, and asset performance. These tools allow users to track cryptos, memecoins, NFTs, and more, all in one place. With features like multichain support and intuitive dashboards, portfolio trackers make it easy for beginners and experts to stay informed and organized in Solana’s dynamic ecosystem."
+        , projects: all, title: 'Bridge', icon: '🌉', slug: 'bridge', popular: true
+    },
+    {
+        description: "Portfolio trackers on Solana simplify managing your digital assets by providing real-time insights into token balances, transaction history, and asset performance. These tools allow users to track cryptos, memecoins, NFTs, and more, all in one place. With features like multichain support and intuitive dashboards, portfolio trackers make it easy for beginners and experts to stay informed and organized in Solana’s dynamic ecosystem."
+        , projects: [], title: 'Caller bots (AI)', icon: '🚨', slug: 'caller-bots-ai', popular: true
+    },
+    {
+        description: "Portfolio trackers on Solana simplify managing your digital assets by providing real-time insights into token balances, transaction history, and asset performance. These tools allow users to track cryptos, memecoins, NFTs, and more, all in one place. With features like multichain support and intuitive dashboards, portfolio trackers make it easy for beginners and experts to stay informed and organized in Solana’s dynamic ecosystem."
+        , projects: [], title: 'Casinos & Gambling', icon: '🎰', slug: 'casinos-gambling', popular: true
+    },
+    {
+        description: "Portfolio trackers on Solana simplify managing your digital assets by providing real-time insights into token balances, transaction history, and asset performance. These tools allow users to track cryptos, memecoins, NFTs, and more, all in one place. With features like multichain support and intuitive dashboards, portfolio trackers make it easy for beginners and experts to stay informed and organized in Solana’s dynamic ecosystem."
+        , projects: all, title: 'Contract scanners', icon: '🕵️', slug: 'contract-scanners'
+    },
+    {
+        description: "Portfolio trackers on Solana simplify managing your digital assets by providing real-time insights into token balances, transaction history, and asset performance. These tools allow users to track cryptos, memecoins, NFTs, and more, all in one place. With features like multichain support and intuitive dashboards, portfolio trackers make it easy for beginners and experts to stay informed and organized in Solana’s dynamic ecosystem."
+        , projects: all, title: 'DePIN', icon: '🌐', slug: 'depin'
+    },
+    {
+        description: "Portfolio trackers on Solana simplify managing your digital assets by providing real-time insights into token balances, transaction history, and asset performance. These tools allow users to track cryptos, memecoins, NFTs, and more, all in one place. With features like multichain support and intuitive dashboards, portfolio trackers make it easy for beginners and experts to stay informed and organized in Solana’s dynamic ecosystem."
+        , projects: all, title: 'Derivs/Perps', icon: '♾️', slug: 'derivs-perps', popular: true
+    },
+    {
+        description: "Portfolio trackers on Solana simplify managing your digital assets by providing real-time insights into token balances, transaction history, and asset performance. These tools allow users to track cryptos, memecoins, NFTs, and more, all in one place. With features like multichain support and intuitive dashboards, portfolio trackers make it easy for beginners and experts to stay informed and organized in Solana’s dynamic ecosystem."
+        , projects: all, title: 'DEXs', icon: '💱', slug: 'dexs'
+    },
     // { projects: all, title: 'Events', icon: '📅', slug: 'events' },
     // { projects: all, title: 'Explorer', icon: '🔎', slug: 'explorer' },
     // { projects: all, title: 'Hardware Wallets', icon: '📱', slug: 'hardware-wallets' },

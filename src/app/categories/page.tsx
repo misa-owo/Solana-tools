@@ -45,7 +45,7 @@ const Category: React.FC<Props> = ({ categories, title }) => {
             <p className='text-white text-3xl font-bold'>{title}</p>
             <div className='flex mt-10 gap-4 justify-center flex-wrap'>
                 {categories.map(category =>
-                    <a key={category.slug} href="" className="relative text-white w-[23%] shadow-[#8952e0]/10  flex flex-col items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6  shadow-xl">
+                    <a key={category.slug} href={`/categories/${category.slug}`} className="relative text-white w-[23%] shadow-[#8952e0]/10  flex flex-col items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6  shadow-xl">
                         <div className='text-2xl'>{category.icon}</div>
                         <p className="mt-2 text-xl font-bold">{category.title}</p>
                         <div className='mt-4 flex  w-fit items-center'>
