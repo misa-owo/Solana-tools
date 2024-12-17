@@ -51,7 +51,7 @@ interface Props {
  const Guide: React.FC<Props> = ({ projects, title }) => {
   return <div className='mt-[10%]'>
     <p className='text-white text-3xl font-bold'>{title}</p>
-    <div className='flex mt-10 gap-4'>
+    <div className='flex mt-10 gap-4 flex-wrap'>
       {projects.map(project => <a key={project.name} href="" className="relative text-white w-[32%] shadow-[#8952e0]/10  flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6  shadow-xl">
         <Image src={project.logo} className="rounded-[50%]" alt="" width={50} height={50} />
         <p className="ml-4 font-bold">How to get started with {project.name}?</p>

@@ -33,11 +33,10 @@ export default function RootLayout({
 }
 
 const navLinks = [
-  { name: "Explore Tools" },
-  { name: "Categories" },
-  { name: "Alternatives" },
-  { name: "Guides" },
-  { name: "Blogs" },
+  { link: "/" ,name: "Explore Tools" },
+  { link: "/categories" ,name: "Categories" ,},
+  { link: "/guides" ,name: "Guides" },
+  { link: "/blogs" ,name: "Blogs" },
 ]
 
 
@@ -64,7 +63,7 @@ const Header = () => {
         <Image src={"/blast.avif"} width={35} height={28} alt="Logo" />
       </div>
       <div className="flex justify-center gap-8 items-center w-6/12">
-        {navLinks.map(navLink => <a key={navLink.name} className="text-xs cursor-pointer">{navLink.name}</a>)}
+        {navLinks.map(navLink => <a key={navLink.name} href={navLink.link} className="text-xs cursor-pointer">{navLink.name}</a>)}
       </div>
       <div className="w-3/12">
 
