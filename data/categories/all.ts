@@ -1,16 +1,27 @@
-const all = [
+interface Project {
+    name: string,
+    logo:string,
+    paid: boolean, 
+    category: string,
+    description: string,
+    link: string,
+    popular?: boolean
+}
+const all: Project[] = [
     {
         name: "BullX NEO",
         logo:"/tools/bullx.jpg",
         paid: false, // FREE
         category: "TRADING BOTS",
+        popular: true,
         description: "BullX is a trading bot platform that operates on the Solana blockchain. It is designed to assist...",
         link: "https://example.com/bullx-neo" // Replace with actual link
     },
     {
         name: "Trojan On Solana",
-        logo:"/tools/bullx.jpg",
+        logo:"/tools/trojan.jpg",
         paid: false, // FREE
+        popular: true,
         category: "TELEGRAM TRADING BOTS",
         description: "Trojan on Solana is a Telegram Trading Bot that stands out from its competitors by providing bot...",
         link: "https://example.com/trojan-on-solana" // Replace with actual link
@@ -121,8 +132,9 @@ const all = [
     },
     {
         name: "Photon SOL",
-        logo:"/tools/bullx.jpg",
+        logo:"/tools/photon.jpg",
         paid: false, // FREE
+        popular: true,
         category: "TRADING BOTS",
         description: "Photon SOL is a fast and user-friendly trading platform that enables easy token analytics, snipi...",
         link: "https://example.com/photon-sol" // Replace with actual link

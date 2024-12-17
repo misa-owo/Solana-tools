@@ -7,7 +7,8 @@ interface Props {
     paid: boolean, 
     category: string,
     description: string,
-    link: string
+    link: string,
+    popular?: boolean
 }
 
 const Project: React.FC<Props> = ({name, paid, description, logo}) => {
