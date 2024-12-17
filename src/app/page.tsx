@@ -14,8 +14,6 @@ export default function Home() {
     return categories.find(category => category.title === selectedCategory)?.projects || [];
   }, [selectedCategory])
 
-
-
   return (
     <div >
       <div className="relative">
