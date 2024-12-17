@@ -1,4 +1,4 @@
-interface Project {
+export interface IProject {
     name: string,
     logo:string,
     paid: boolean, 
@@ -7,7 +7,7 @@ interface Project {
     link: string,
     popular?: boolean
 }
-const all: Project[] = [
+const all: IProject[] = [
     {
         name: "BullX NEO",
         logo:"/tools/bullx.jpg",

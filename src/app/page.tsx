@@ -17,7 +17,7 @@ export default function Home() {
 
 
   return (
-    <div className="">
+    <div >
       <div className="relative">
         <div className="min-w-screen min-h-[50vh] spiral block relative -top-[20vh]">
         </div>

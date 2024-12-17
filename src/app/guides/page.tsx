@@ -48,7 +48,7 @@ interface Props {
   title: string,
   projects: IProject[]
 }
-export const Guide: React.FC<Props> = ({ projects, title }) => {
+ const Guide: React.FC<Props> = ({ projects, title }) => {
   return <div className='mt-[10%]'>
     <p className='text-white text-3xl font-bold'>{title}</p>
     <div className='flex mt-10 gap-4'>

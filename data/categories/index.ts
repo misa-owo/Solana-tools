@@ -1,14 +1,21 @@
-import all from "./all";
+import all, { IProject } from "./all";
 
-const categories = [
+export interface ICategory {
+    projects: IProject[],
+    title: string,
+    icon: string,
+    slug: string,
+    popular?: boolean
+}
+const categories: ICategory[] = [
     { projects: [], title: 'All', icon: '♾️', slug: 'all' },
-    { projects: all, title: 'Bridge', icon: '🌉', slug: 'bridge' },
-    { projects: [], title: 'Caller bots (AI)', icon: '🚨', slug: 'caller-bots-ai' },
-    { projects: [], title: 'Casinos & Gambling', icon: '🎰', slug: 'casinos-gambling' },
-    // { projects: all, title: 'Contract scanners', icon: '🕵️', slug: 'contract-scanners' },
-    // { projects: all, title: 'DePIN', icon: '🌐', slug: 'depin' },
-    // { projects: all, title: 'Derivs/Perps', icon: '♾️', slug: 'derivs-perps' },
-    // { projects: all, title: 'DEXs', icon: '💱', slug: 'dexs' },
+    { projects: all, title: 'Bridge', icon: '🌉', slug: 'bridge',  popular: true},
+    { projects: [], title: 'Caller bots (AI)', icon: '🚨', slug: 'caller-bots-ai' , popular: true},
+    { projects: [], title: 'Casinos & Gambling', icon: '🎰', slug: 'casinos-gambling' , popular: true},
+    { projects: all, title: 'Contract scanners', icon: '🕵️', slug: 'contract-scanners' },
+    { projects: all, title: 'DePIN', icon: '🌐', slug: 'depin' },
+    { projects: all, title: 'Derivs/Perps', icon: '♾️', slug: 'derivs-perps' , popular: true},
+    { projects: all, title: 'DEXs', icon: '💱', slug: 'dexs' },
     // { projects: all, title: 'Events', icon: '📅', slug: 'events' },
     // { projects: all, title: 'Explorer', icon: '🔎', slug: 'explorer' },
     // { projects: all, title: 'Hardware Wallets', icon: '📱', slug: 'hardware-wallets' },

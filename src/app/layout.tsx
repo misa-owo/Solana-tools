@@ -64,7 +64,7 @@ const Header = () => {
         <Image src={"/blast.avif"} width={35} height={28} alt="Logo" />
       </div>
       <div className="flex justify-center gap-8 items-center w-6/12">
-        {navLinks.map(navLink => <a className="text-xs cursor-pointer">{navLink.name}</a>)}
+        {navLinks.map(navLink => <a key={navLink.name} className="text-xs cursor-pointer">{navLink.name}</a>)}
       </div>
       <div className="w-3/12">
 
@@ -79,9 +79,9 @@ const Footer = () => {
         <Image src={"/blast.avif"} width={35} height={35} alt="logo" />
         <p className=" mt-3">Your Complete Guide to Solana Tools and Dapps</p>
         <div className="flex gap-3 mt-4">
-            <a href="" target="_blank">
-              <Image src={"socials/x.svg"} width={30} height={30} alt="x" />
-            </a>
+          <a href="" target="_blank">
+            <Image src={"socials/x.svg"} width={30} height={30} alt="x" />
+          </a>
         </div>
       </div>
       <div className="w-1/4">
