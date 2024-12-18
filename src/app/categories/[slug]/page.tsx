@@ -10,9 +10,7 @@ interface Props {
 
 export default async function Category({ params }: Props) {
     const { slug } = await params;
-    console.log(slug)
     const category = categories.find(c => c.slug === slug)
-    console.log(category)
     return <div className='px-[10%]'>
         <div className="relative">
             <div className="min-w-screen min-h-[50vh] spiral block relative -top-[20vh]">
@@ -40,7 +38,7 @@ interface ProjectProps extends IProject {
     category: string
 }
 
-const Project: React.FC<IProject> = ({ name, paid, logo, description, category }) => {
+const Project: React.FC<ProjectProps> = ({ name, paid, logo, description, category }) => {
     return (
         <div className="relative w-[31%] mb-5 bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
             <p style={{ borderColor: paid ? "#8852e0" : "#0ea371", backgroundColor: paid ? "#8852e0" : "#0ea371" }} className="absolute right-5 top-5 font-bold uppercase text-white text-xs p-1 px-3 rounded-xl text-white border-[1px] border-solid">{paid ? "Paid" : "Free"}</p>
