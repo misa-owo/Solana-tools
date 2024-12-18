@@ -17,9 +17,13 @@ export default async function Category({ params }: Props) {
         <div className="w-full  text-white text-center text-sm flex flex-col items-center">
             <p className="mt-[10%] bg-[#ffffff14] w-fit m-auto px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
             <h1 className="mt-10 text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]"> {project?.name}</h1>
+            <div className="flex ml-4">
+                <h1 className="mt-2 text-xl text-white  bg-[#ffffff14] cursor-pointer w-fit m-auto px-2 text-xs font-semibold  py-1 rounded-xl border-2  mr-2 "> {category?.title}</h1>
+                <h1 className="mt-2 text-xl text-white bg-[#ffffff14] cursor-pointer w-fit m-auto px-2 text-xs font-semibold  py-1 rounded-xl border-2  "> {project?.paid ? "FREE" : "PAID"} </h1>
+            </div>
         </div>
         <div className="flex flex-wrap gap-10 mt-[10%]">
-            {project?.content.map(content => <Component  {...content} />)}
+            {project?.content.map((content, index) => <Component  {...content} key={index} />)}
         </div>
         <div className="mt-[15%] block flex relative text-white w-full flex items-center  justify-between bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-xl p-12 shadow-xl">
             <div>
