@@ -3,6 +3,7 @@ import categories from "../../../../data/categories"
 import { DetailsComponent, DetailsListComponent, IContent, ImageHeader, TrialLink } from "../../../../data/types";
 import Image from "next/image";
 import { useMemo } from "react";
+import ImageCarousel from "@/components/image-carousel";
 
 
 interface Props {
@@ -48,6 +49,8 @@ const Component: React.FC<IContent> = (component) => {
                 return <TrialLinkComponent {...component} />
             case "details-list":
                 return <DetailListComponent {...component} />
+            case "image-carousel": 
+                return <ImageCarousel {...component} />
             default:
                 return null;
                 break;

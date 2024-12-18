@@ -19,10 +19,10 @@ export const bullx: IContent[] = [
     {
         type: "image-carousel",
         images: [
-            "https://example.com/image1.jpg",
-            "https://example.com/image2.jpg",
-            "https://example.com/image3.jpg",
-            "https://example.com/image4.jpg",
+            "/tools/meteora.jpeg",
+            "/tools/meteora.jpeg",
+            "/tools/meteora.jpeg",
+            "/tools/meteora.jpeg",
         ],
     },
     {
