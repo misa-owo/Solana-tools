@@ -33,7 +33,6 @@ export default function RootLayout({
 }
 
 const navLinks = [
-  { link: "/" ,name: "Explore Tools" },
   { link: "/categories" ,name: "Categories" ,},
   { link: "/guides" ,name: "Guides" },
   { link: "/blogs" ,name: "Blogs" },
@@ -42,7 +41,7 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <nav className="flex items-center px-[10%] fixed
+    <nav className="flex items-center px-10 md:px-[10%] fixed
       relative
       text-white
       before:inset-0
@@ -55,17 +54,19 @@ const Header = () => {
       border-b-[1px]
       border-[#ffffff14]
       backdrop-blur-md
+      w-full 
       shadow-xl
       py-2
+      justify-between
       z-2
       before:pointer-events-none">
-      <div className="w-3/12 flex justify-end">
+      <div className="w-fit md:w-3/12 flex justify-between md:justify-end">
         <Image src={"/blast.avif"} width={35} height={28} alt="Logo" />
       </div>
-      <div className="flex justify-center gap-8 items-center w-6/12">
+      <div className="flex justify-center gap-8 items-center md:w-6/12">
         {navLinks.map(navLink => <a key={navLink.name} href={navLink.link} className="text-xs cursor-pointer">{navLink.name}</a>)}
       </div>
-      <div className="w-3/12">
+      <div className="hidden md:block md:w-3/12">
 
       </div>
     </nav>)
