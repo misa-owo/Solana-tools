@@ -14,7 +14,7 @@ const Categories = () => {
                 <div className="min-w-screen min-h-[30vh] md:min-h-[50vh] spiral block relative -top-[20vh]">
                 </div>
                 <div className="w-full  text-white text-center text-sm flex flex-col items-center absolute top-0">
-                    <p className="mt-[10%] bg-[#ffffff14] w-fit m-auto px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
+                    <p className="mt-[10%] bg-[#ffffff14] w-fit m-auto px-2 md:px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
                     <h1 className="mt-10 text-2xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] md:w-[50%]"> Solana Tools Categories
                     </h1>
                     <h2 className="text-[#abadaf] mt-2 md:mt-5 text-sm md:text-xl md:w-5/12">Explore Solana tools in the different categories below and find alternatives to your avorite tools. Discover new tools to enhance your Solana trading experience</h2>
