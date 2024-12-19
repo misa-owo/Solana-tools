@@ -21,13 +21,13 @@ export default function Home() {
         <div className="min-w-screen min-h-[50vh] spiral block relative -top-[20vh]">
         </div>
         <div className="w-full  text-white text-center text-sm flex flex-col items-center absolute top-0">
-          <p className="mt-[10%] bg-[#ffffff14] w-fit m-auto px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
-          <h1 className="mt-10 text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]"> Your Complete Guide to Solana Tools and Dapps
+          <p className="mt-[10%] bg-[#ffffff14] w-9/12 md:w-fit m-auto px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
+          <h1 className="mt-10 text-xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]"> Your Complete Guide to Solana Tools and Dapps
           </h1>
-          <h2 className="text-[#abadaf] mt-5 text-xl w-5/12">Your Ultimate Source for the Latest Solana Tools and dApps to Supercharge Your Blockchain Experience</h2>
+          <h2 className="text-[#abadaf] mt-5  text-sm  w-9/12 md:text-xl md:w-5/12">Your Ultimate Source for the Latest Solana Tools and dApps to Supercharge Your Blockchain Experience</h2>
         </div>
       </div>
-      <div className="w-7/12 m-auto mt-[10%]">
+      <div className="w-10/12 md:w-7/12 m-auto mt-[10%]">
         <div className="rounded-xl overflow-hidden flex items-center  border-[1px] border-solid border-[#ffffff14]">
           <Input className="border-none py-2 text-[#abadaf] focus-visible:ring-0" onChange={e => setSearch(e.target.value)} value={search}>
           </Input>
@@ -75,32 +75,31 @@ export default function Home() {
 const GuideSection = () => {
   return (
     <>
-      <div className="mt-[5%] block  relative text-white w-full   bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-xl p-12 shadow-xl">
+      <div className="mt-[5%] block  relative text-white w-full   bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-xl p-6 md:p-12 shadow-xl">
         <div>
           <p className="border-[1px] border-solid text-xs w-fit px-4 py-1 text-[#d3bef4] border-[#8952e0] rounded-xl">Guides</p>
-          <p className="text-4xl font-bold mt-4">Everything you need to trade on Solana</p>
-          <p className="text-[#abadaf] text-sm mt-2 "> Step-by-step guide for beginners</p>
+          <p className="text-xl md:text-4xl font-bold mt-4">Everything you need to trade on Solana</p>
+          <p className="text-[#abadaf] text-xs md:text-sm mt-2 "> Step-by-step guide for beginners</p>
         </div>
-        <Button className="mt-3 bg-[#8952e0] mt-6">Explore our guides <span><ArrowRight /></span></Button>
+        <Button className="mt-3 bg-[#8952e0] mt-6 text-xs md:text-md">Explore our guides <span><ArrowRight /></span></Button>
       </div>
       <div className="flex mt-10 pb-[5%] gap-5 flex-wrap justify-center">
-        <a href="" className="relative text-white w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+        <a href="" className="relative text-white w-full md:w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
           <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
           <p className="ml-4 font-bold">How to get started with Birdeye?</p>
         </a>
-        <a href="" className="relative text-white w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+        <a href="" className="relative text-white w-full md:w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
           <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
           <p className="ml-4 font-bold">How to get started with Birdeye?</p>
         </a>
-        <a href="" className="relative text-white w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+        <a href="" className="relative text-white w-full md:w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
           <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
           <p className="ml-4 font-bold">How to get started with Birdeye?</p>
         </a>
-        <a href="" className="relative text-white w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+        <a href="" className="relative text-white w-full md:w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
           <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
           <p className="ml-4 font-bold">How to get started with Birdeye?</p>
         </a>
-
       </div>
     </>
 
@@ -110,26 +109,26 @@ const GuideSection = () => {
 const ToolsSection = () => {
   return (
     <>
-      <div className="w-full text-white text-sm mt-[5%] text-white">
+      <div className="w-full text-white text-sm mt-[10%] md:mt-[5%] text-white">
         <p className="border-[1px] border-solid text-xs w-fit px-4 py-1 text-[#d3bef4] border-[#8952e0] rounded-xl">Tools</p>
-        <p className="mt-2 text-3xl font-bold mt-4">Find Solana tools for your needs</p>
-        <p className="mt-1 text-3xl font-bold">Popular tools categories</p>
-        <Button className="mt-3 bg-[#8952e0]">Explore our tools <span><ArrowRight /></span></Button>
+        <p className="mt-2 text-xl md:text-3xl font-bold mt-4">Find Solana tools for your needs</p>
+        <p className="mt-1 text-xl md:text-3xl font-bold">Popular tools categories</p>
+        <Button  className="mt-3 bg-[#8952e0] text-sm md:text-md">Explore our tools <span><ArrowRight /></span></Button>
       </div>
-      <div className="flex mt-10 pb-[5%] gap-2">
-        <a href="" className="relative text-white w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+      <div className="flex mt-10 pb-[5%] gap-2 flex-wrap">
+        <a href="" className="relative text-white w-full md:w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
           <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
           <p className="ml-4 font-bold">How to get started with Birdeye?</p>
         </a>
-        <a href="" className="relative text-white w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+        <a href="" className="relative text-white w-full md:w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
           <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
           <p className="ml-4 font-bold">How to get started with Birdeye?</p>
         </a>
-        <a href="" className="relative text-white w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+        <a href="" className="relative text-white w-full md:w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
           <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
           <p className="ml-4 font-bold">How to get started with Birdeye?</p>
         </a>
-        <a href="" className="relative text-white w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
+        <a href="" className="relative text-white w-full md:w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
           <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
           <p className="ml-4 font-bold">How to get started with Birdeye?</p>
         </a>
