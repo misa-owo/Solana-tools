@@ -8,11 +8,12 @@ import Project from "@/components/ui/project";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
-
+  const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const filteredProjects = useMemo(() => {
-    return categories.find(category => category.title === selectedCategory)?.projects || [];
-  }, [selectedCategory])
+    const filteredProjects = categories.find(category => category.title === selectedCategory)?.projects || [];
+    return filteredProjects.filter(project => project.name.toLocaleLowerCase().includes(search.toLowerCase()))
+  }, [selectedCategory, search])
 
   return (
     <div >
@@ -28,7 +29,7 @@ export default function Home() {
       </div>
       <div className="w-7/12 m-auto mt-[10%]">
         <div className="rounded-xl overflow-hidden flex items-center  border-[1px] border-solid border-[#ffffff14]">
-          <Input className="border-none py-2 text-[#abadaf] focus-visible:ring-0" >
+          <Input className="border-none py-2 text-[#abadaf] focus-visible:ring-0" onChange={e => setSearch(e.target.value)} value={search}>
           </Input>
           <Button className="w-3/12 rounded-xl py-5">Search</Button>
         </div>
@@ -44,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-between mt-10 flex-wrap gap-2 gap-4 pb-[10%] px-[10%]">
+      <div className="flex justify-center mt-10 flex-wrap gap-2 gap-4 pb-[10%] px-[10%]">
         {filteredProjects.map(project => {
           return (
             <Project key={project.name} {...project} />

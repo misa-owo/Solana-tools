@@ -14,7 +14,7 @@ export interface IProject {
     content: IContent[]
     guide?: Guide
 }
-const all: IProject[] = [
+const exchange: IProject[] = [
     {
         content: bullx,
         name: "BullX NEO",
@@ -201,4 +201,4 @@ const all: IProject[] = [
     }
 ];
 
-export default all;
+export default exchange;
