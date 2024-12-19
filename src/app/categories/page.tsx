@@ -11,23 +11,23 @@ const Categories = () => {
     return (
         <div className='px-[10%]'>
             <div className="relative">
-                <div className="min-w-screen min-h-[50vh] spiral block relative -top-[20vh]">
+                <div className="min-w-screen min-h-[30vh] md:min-h-[50vh] spiral block relative -top-[20vh]">
                 </div>
                 <div className="w-full  text-white text-center text-sm flex flex-col items-center absolute top-0">
                     <p className="mt-[10%] bg-[#ffffff14] w-fit m-auto px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
-                    <h1 className="mt-10 text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]"> Solana Tools Categories
+                    <h1 className="mt-10 text-2xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] md:w-[50%]"> Solana Tools Categories
                     </h1>
-                    <h2 className="text-[#abadaf] mt-5 text-xl w-5/12">Explore Solana tools in the different categories below and find alternatives to your avorite tools. Discover new tools to enhance your Solana trading experience</h2>
+                    <h2 className="text-[#abadaf] mt-2 md:mt-5 text-sm md:text-xl md:w-5/12">Explore Solana tools in the different categories below and find alternatives to your avorite tools. Discover new tools to enhance your Solana trading experience</h2>
                 </div>
             </div>
             <Category categories={popular} title="Popular Categories" />
             <Category title="All Categories" categories={categories} />
-            <div className="mt-[15%] block flex relative text-white w-full flex items-center  justify-between bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-xl p-12 shadow-xl">
+            <div className="mt-[15%] block flex relative text-white w-full flex flex-col md:flex-row md:items-center  justify-between bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-xl p-6 md:p-12 shadow-xl">
                 <div>
-                    <p className="text-4xl font-bold">Stay in touch</p>
-                    <p className="text-[#abadaf] text-sm mt-2 "> Get  updates regarding tools and platforms</p>
+                    <p className="text-xl md:text-4xl font-bold">Stay in touch</p>
+                    <p className="text-[#abadaf] text-xs md:text-sm md:mt-2 "> Get  updates regarding tools and platforms</p>
                 </div>
-                <Button className="rounded-xl text-white shadow-xl ml-20 bg-[#8952e0]">Subscribe</Button>
+                <Button className="mt-4 md:mt-0 rounded-xl text-white shadow-xl md:ml-20 bg-[#8952e0] w-full">Subscribe</Button>
             </div>
         </div>
     )
@@ -41,11 +41,11 @@ interface Props {
 }
 const Category: React.FC<Props> = ({ categories, title }) => {
     return (
-        <div className='mt-[10%]'>
-            <p className='text-white text-3xl font-bold'>{title}</p>
+        <div className='mt-[5%] md:mt-[10%]'>
+            <p className='text-white text-xl md:text-3xl font-bold'>{title}</p>
             <div className='flex mt-10 gap-4 justify-center flex-wrap'>
                 {categories.map(category =>
-                    <a key={category.slug} href={`/categories/${category.slug}`} className="relative text-white w-[23%] shadow-[#8952e0]/10  flex flex-col items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6  shadow-xl">
+                    <a key={category.slug} href={`/categories/${category.slug}`} className="relative text-white w-full md:w-[23%] shadow-[#8952e0]/10  flex flex-col items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6  shadow-xl">
                         <div className='text-2xl'>{category.icon}</div>
                         <p className="mt-2 text-xl font-bold">{category.title}</p>
                         <div className='mt-4 flex  w-fit items-center'>
