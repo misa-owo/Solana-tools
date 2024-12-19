@@ -9,6 +9,7 @@ export const bullxGuide: Guide = {
     },
     steps: [
         {
+            image: "/tools/meteora.jpeg",
             details: {
                 title: "Join Trojan on Solana Telegram",
                 paragraph: [
@@ -18,6 +19,7 @@ export const bullxGuide: Guide = {
             }
         },
         {
+            image: "/tools/meteora.jpeg",
             details: {
                 title: "Click on '/start' to initiate Trojan on Solana",
                 paragraph: [
@@ -25,9 +27,10 @@ export const bullxGuide: Guide = {
                     "This command will bring up the bot’s main menu, displaying various options and information about your wallet balance and trading tools.",
                     "The bot is now ready to guide you through your trading journey on Solana."
                 ]
-            }
+            },
         },
         {
+            image: "/tools/meteora.jpeg",
             details: {
                 title: "Fund your wallet",
                 paragraph: [
@@ -38,6 +41,7 @@ export const bullxGuide: Guide = {
             }
         },
         {
+            image: "/tools/meteora.jpeg",
             details: {
                 title: "Trade by pasting a token address into Telegram",
                 paragraph: [
@@ -49,6 +53,7 @@ export const bullxGuide: Guide = {
             }
         },
         {
+            image: "/tools/meteora.jpeg",
             details: {
                 title: "See your positions",
                 paragraph: [
@@ -57,6 +62,16 @@ export const bullxGuide: Guide = {
                     "You can buy or sell directly from this screen by following the on-screen instructions."
                 ]
             }
+        }
+    ],
+    faqs: [
+        {
+            title: "What are the fees for using Trojan On Solana?",
+            paragraph: " Trojan On Solana fees are collected in SOL and it is 1% of the initial token used for every buy and sell transaction.",
+        },
+        {
+            title: "Does Trojan On Solana have Anti-MEV feature?",
+            paragraph: "Yes"
         }
     ]
 };

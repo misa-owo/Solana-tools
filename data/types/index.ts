@@ -39,8 +39,9 @@ export interface Guide {
     title: string;
     logo: string;
     description: string,
-    question: {}
-    steps: Step[]
+    question: Question
+    steps: Step[],
+    faqs: Question[]
 }
 
 interface Question {
@@ -53,5 +54,6 @@ interface Step {
         title: string,
         paragraph: string[]
     }
-    image?: string;
+    image: string;
+    reverse?: boolean
 }
