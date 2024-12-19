@@ -6,6 +6,7 @@ import categories from "../../data/categories";
 import Image from "next/image";
 import Project from "@/components/ui/project";
 import { ArrowRight } from "lucide-react";
+import Contact from "@/components/contact";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -58,13 +59,7 @@ export default function Home() {
         <div >
           <GuideSection />
           <ToolsSection />
-          <div className="mt-[5%] block flex relative text-white w-full flex items-center  justify-between bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-xl p-12 shadow-xl">
-            <div>
-              <p className="text-4xl font-bold">Stay in touch</p>
-              <p className="text-[#abadaf] text-sm mt-2 "> Get  updates regarding tools and platforms</p>
-            </div>
-            <Button className="rounded-xl text-white shadow-xl ml-20 bg-[#8952e0]">Subscribe</Button>
-          </div>
+          <Contact/>
         </div>
       </div>
     </div>
