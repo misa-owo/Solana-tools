@@ -1,5 +1,6 @@
 import { bullx } from "../details/bullx";
-import { IContent } from "../types";
+import { bullxGuide } from "../guides/bullx";
+import { Guide, IContent } from "../types";
 
 export interface IProject {
     name: string,
@@ -11,6 +12,7 @@ export interface IProject {
     slug: string,
     popular?: boolean,
     content: IContent[]
+    guide?: Guide
 }
 const all: IProject[] = [
     {
@@ -22,7 +24,8 @@ const all: IProject[] = [
         popular: true,
         description: "BullX is a trading bot platform that operates on the Solana blockchain. It is designed to assist...",
         link: "https://example.com/bullx-neo",
-        slug: "bullx-neo"
+        slug: "bullx-neo",
+        guide: bullxGuide
     },
     {
         content: [],

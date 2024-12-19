@@ -33,3 +33,25 @@ export interface ImageCarousel {
     images: string[];
 }
 export type IContent = ImageHeader | ImageCarousel | DirectLink | DetailsComponent | DetailsListComponent | TrialLink
+
+
+export interface Guide {
+    title: string;
+    logo: string;
+    description: string,
+    question: {}
+    steps: Step[]
+}
+
+interface Question {
+    title: string,
+    paragraph: string
+    
+}
+interface Step {
+    details: {
+        title: string,
+        paragraph: string[]
+    }
+    image?: string;
+}
