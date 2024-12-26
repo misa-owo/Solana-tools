@@ -23,9 +23,11 @@ export default function Home() {
         </div>
         <div className="w-full  text-white text-center text-sm flex flex-col items-center absolute top-0">
           <p className="mt-[10%] bg-[#ffffff14] w-9/12 md:w-fit m-auto px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
-          <h1 className="mt-10 text-xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]"> Your Complete Guide to Solana Tools and Dapps
+          <h1 className="mt-10 text-xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]"> TradingBots 
           </h1>
-          <h2 className="text-[#abadaf] mt-5  text-sm  w-9/12 md:text-xl md:w-5/12">Your Ultimate Source for the Latest Solana Tools and dApps to Supercharge Your Blockchain Experience</h2>
+          <h1 className="mt-5 text-xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]"> Best Telegram Bots for Solana & Ethereum Meme Coin
+          </h1>
+          <h2 className="text-[#abadaf] mt-5  text-sm  w-9/12 md:text-xl md:w-5/12">Discover the best Telegram trading bots for Ethereum and Solana Meme Coins. Dominate memecoin trading with the best trading platforms and trading bots today</h2>
         </div>
       </div>
       <div className="w-10/12 md:w-7/12 m-auto mt-[10%]">

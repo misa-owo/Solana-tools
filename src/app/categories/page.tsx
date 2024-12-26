@@ -2,7 +2,6 @@
 import React, { useMemo } from 'react'
 import categories, { ICategory } from '../../../data/categories'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import Contact from '@/components/contact'
 
 const Categories = () => {
