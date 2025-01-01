@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 import React, { useMemo } from 'react'
 import categories from '../../../data/categories'
 import Image from 'next/image'
-import { IProject } from '../../../data/categories/exchange'
+import { IProject } from '../../../data/categories/trading-bot'
 
 const Guides = () => {
 

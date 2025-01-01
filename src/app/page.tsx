@@ -36,11 +36,11 @@ export default function Home() {
           </Input>
           <Button className="w-3/12 rounded-xl py-5">Search</Button>
         </div>
-        <div className="text-white mt-5 flex flex-wrap justify-start gap-x-2 gap-y-2 ">
+        <div className="text-white mt-5 flex flex-wrap justify-center gap-x-2 gap-y-2 ">
           {categories.map(category => <p
             key={category.title}
             onClick={() => setSelectedCategory(category.title)}
-            className={`bg-[#ffffff14] cursor-pointer w-fit m-auto px-2 text-xs font-semibold  py-1  rounded-xl  
+            className={`bg-[#ffffff14] cursor-pointer w-fit  px-2 text-xs font-semibold  py-1  rounded-xl  
             border-2 
             border-[${selectedCategory === category.title ? "#8952e0" : "#ffffff14"}] `}>
             <span className="mr-2">{category.icon}</span>{category.title}
@@ -48,13 +48,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10 flex-wrap gap-2 gap-4 pb-[10%] px-[10%]">
+      {filteredProjects.length ? <div className="flex justify-center mt-10 flex-wrap gap-2 gap-4 pb-[10%] px-[10%]">
         {filteredProjects.map(project => {
           return (
             <Project key={project.name} {...project} />
           )
         })}
-      </div>
+      </div>: <p className="text-white text-4xl font-bold text-center my-10">Coming Soon...</p>}
       <div className="relative overflow-hidden block fit-content px-[10%]">
         <div className="w-screen min-h-screen spiral block absolute -top-[50vh]">
         </div>
