@@ -1,8 +1,9 @@
 import categories from "../../../../data/categories"
-import { IProject } from "../../../../data/categories/exchange";
+import { IProject } from "../../../../data/categories/trading-bot";
 import Image from "next/image";
 import { SquareArrowOutUpRight } from "lucide-react";
 import Contact from "@/components/contact";
+import Link from "next/link";
 
 interface Props {
     params: Promise<{ slug: string }>
@@ -32,7 +33,7 @@ interface ProjectProps extends IProject {
     category: string
 }
 
-const Project: React.FC<ProjectProps> = ({ name, paid, logo, description, category }) => {
+const Project: React.FC<ProjectProps> = ({ name, paid, logo, description, category , slug}) => {
     return (
         <div className="relative w-full md:w-[31%] md:mb-5 bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
             <p style={{ borderColor: paid ? "#8852e0" : "#0ea371", backgroundColor: paid ? "#8852e0" : "#0ea371" }} className="absolute right-5 top-5 font-bold uppercase text-white text-xs p-1 px-3 rounded-xl text-white border-[1px] border-solid">{paid ? "Paid" : "Free"}</p>
@@ -44,9 +45,9 @@ const Project: React.FC<ProjectProps> = ({ name, paid, logo, description, catego
                 </div>
             </div>
             <p className="mt-4 text-xs md:text-sm text-[#abadaf]">{description}</p>
-            <div className="flex justify-end mt-4">
+            <Link className="flex justify-end mt-4" href={`/tools/${slug}`}>
                 <SquareArrowOutUpRight color="#abadaf" />
-            </div>
+            </Link>
         </div>
     )
 }

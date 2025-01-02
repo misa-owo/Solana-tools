@@ -1,6 +1,6 @@
-import { bullx } from "../details/bullx";
-import { bullxGuide } from "../guides/bullx";
-import { Guide, IContent } from "../types";
+import { bullxDescription } from "../details/bullx";
+import { trojanDescription } from "../details/trojan";
+import { Guide } from "../types";
 
 export interface IProject {
     name: string,
@@ -11,12 +11,12 @@ export interface IProject {
     link: string,
     slug: string,
     popular?: boolean,
-    content: IContent[]
+    content: string
     guide?: Guide
 }
 const tradingBots: IProject[] = [
     {
-        content: bullx,
+        content: bullxDescription,
         name: "BullX NEO",
         logo: "/tools/bullx.jpg",
         paid: false,
@@ -25,10 +25,9 @@ const tradingBots: IProject[] = [
         description: "BullX NEO is the ultimate Solana trading bot for memecoin traders. Fast, low fees, multi-chain support, and advanced tools to trade smarter with BullX NEO.",
         link: "https://example.com/bullx-neo",
         slug: "bullx-neo",
-        guide: bullxGuide
     },
     {
-        content: [],
+        content: trojanDescription,
         name: "Trojan On Solana",
         logo: "/tools/trojan.jpg",
         paid: false,

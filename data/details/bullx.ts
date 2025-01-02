@@ -1,68 +1,85 @@
-import { IContent } from "../types";
 
-export const bullx: IContent[] = [
-    {
-        type: "image-header",
-        img_url: "/tools/meteora.jpeg"
-    },
-    {
-        type: "details-component",
-        title: "What is Rug Checker?",
-        paragraphs: [
-            "Rug Checker is a tool designed specifically for the Solana blockchain. It helps traders protect themselves from rug pulls. Rug Checker scans and analyzes token contracts on Solana to identify potential risks and red flags.",
-        ]
-    }, {
-        title: "Start using Rug Checker",
-        link: "https://solanabox.tools/blog/most-popular-solana-telegram-trading-bot",
-        type: "direct-link"
-    },
-    {
-        type: "image-carousel",
-        images: [
-            "/tools/meteora.jpeg",
-            "/tools/meteora.jpeg",
-            "/tools/meteora.jpeg",
-            "/tools/meteora.jpeg",
-        ],
-    },
-    {
-        type: "details-component",
-        title: "What does Rug Checker do?",
-        paragraphs: [
-            "By evaluating various security indicators such as mintable status, liquidity pool locks, and more, Rug Checker provides users with valuable insights and safety scores. This allows traders to make more informed decisions and avoid falling victim to rug pulls.",
-            "With Rug Checker, users can have greater confidence in their Solana trades and navigate the memecoins world with more security.",
-        ]
-    },
-    {
-        type: "details-component",
-        title: "What makes Rug Checker special?",
-        paragraphs: [
-            "Rug Checker stands out for its ability to analyze token contracts and identify potential red flags that indicate fraudulent projects.",
-            "By evaluating key factors like the mintable status of a token and the lock status of its liquidity pool, Rug Checker provides users with valuable insights into the security and trustworthiness of a project. This helps traders make informed decisions and avoid falling victim to scams.",
-            "Rug Checker's user-friendly interface and comprehensive analysis make it an essential tool for beginners and experienced investors alike, ensuring a safer and more secure investment experience in the Solana ecosystem.",
-        ],
-    },
-    {
-        type: "details-list",
-        title: "Risk Analysis Details",
-        list: [
-            "Rug Check Analysis",
-            "Security Indicators",
-            "Mintable Status Check",
-            "Liquidity Pool Lock Verification",
-            "Reputable Liquidity Pools Assessment",
-            "Top 10 Holdings Analysis",
-            "Private Wallet Holdings Examination",
-            "Freezing Risk Identification",
-            "Additional Transaction Fees Check",
-            "Color-Coded Risk Level",
-        ],
-    },
-    {
-        type: "trial-link",
-        title: "How to get started with Rug Checker?",
-        link: "https://github.com/",
-        buttonText: "Try Rug Checker now"
-    }
+export const bullxDescription: string = `
+    <img src="/socials/bullx.jpeg"/>
+ <section>
+        <p>Want to upgrade your memecoin trading to the next level? BullX NEO is powered by Solana's lightning-fast blockchain technology and equipped with advanced AI tools like multi-chain support, real-time analytics, and trading automation and MORE! If you are chasing the next big memecoin or want to manage multiple wallets, look no more as BullX offers everything you need to trade smarter and faster. Don’t wait—<strong><a href="https://www.bullxneo.com/register">sign up now</a></strong> to save 10% on fees and stay ahead of the game!</p>
+    </section>
 
-]
+<h2>What is BullX NEO?</h2>
+    <section>
+        <p>BullX NEO is a multi-chain trading platform powered by the Solana blockchain. It offers a seamless way to trade memecoins and other tokens while keeping fees low and transactions lightning-fast. Unlike other bots, BullX combines:</p>
+        <ol>
+            <li>A Telegram trading bot for easy access on-the-go</li>
+            <li>Real-time analytics for smarter decisions</li>
+            <li>Multi-chain, multi-wallet capabilities for smooth trading</li>
+        </ol>
+        <p>Whether you’re a memecoin enthusiast or just getting started, BullX NEO has your back.</p>
+    </section>
+
+    <h2>What Makes BullX NEO Special?</h2>
+    <section>
+        <h3>1. Built for Memecoin Trading</h3>
+        <p>Memecoins move fast. BullX makes sure you’re faster. From tracking trends to trading new pairs, BullX simplifies the process—especially for beginners.</p>
+        <h3>2. Multi-Chain Power</h3>
+        <p>Trade seamlessly across networks:</p>
+        <ol>
+            <li>Solana</li>
+            <li>Ethereum</li>
+            <li>Binance</li>
+            <li>Base</li>
+            <li>Arbitrum</li>
+            <li>Blast</li>
+        </ol>
+        <h3>3. Real-Time Insights</h3>
+        <p>Access powerful tools, including:</p>
+        <ol>
+            <li>Pump.fun integration to discover new tokens</li>
+            <li>Real-time charts and analytics for smarter trades</li>
+            <li>Pump Vision Terminal for up-to-the-second market updates</li>
+        </ol>
+        <h3>4. Solana Blockchain Speed</h3>
+        <p>With Solana, BullX delivers fast transactions, low fees, and unmatched reliability—making it the excellent Solana trading bot for traders on a budget.</p>
+    </section>
+    <img src="/socials/bullx-1.jpeg"/>
+
+    <h2>Key Features of BullX NEO</h2>
+    <section>
+        <p>Here’s what makes BullX the ultimate meme coin trading bot:</p>
+        <ol>
+            <li><strong>Telegram AND Web Platform</strong> for trading anytime, anywhere</li>
+            <li><strong>Multi-chain Support:</strong> Solana, Ethereum, Binance, Base, Arbitrum, Blast</li>
+            <li><strong>Pump.fun Integration</strong> for tracking and trading trending tokens</li>
+            <li><strong>New Pairs Discovery Tool</strong></li>
+            <li><strong>Real-Time Charts and Market Analytics</strong></li>
+            <li><strong>Multi-Wallet Management</strong> for easy access to multiple accounts</li>
+            <li><strong>Portfolio Analyzer</strong> to track profits and losses</li>
+            <li><strong>Limit Orders</strong> for automated trading strategies</li>
+            <li><strong>Trading Automation</strong> for hands-free trades</li>
+            <li><strong>Token Explorer</strong> to discover new opportunities</li>
+        </ol>
+        <p>No more juggling platforms—BullX keeps it all in one place.</p>
+    </section>
+    <img src="/socials/bullx-2.jpeg"/>
+
+    <h2>How Much Does BullX NEO Cost?</h2>
+    <section>
+        <p>Simple and transparent pricing:</p>
+        <ol>
+            <li><strong>1% transaction fee</strong> on trades</li>
+            <li><strong>0.9% transaction fee</strong> if you register using a referral link</li>
+        </ol>
+        <p><strong>Sign up now to save 10% on your trading fees!</strong></p>
+    </section>
+
+    <h2>Why BullX NEO is the Go-To Solana Trading Bot</h2>
+    <section>
+        <p>If you're trading memecoins or exploring opportunities on the Solana blockchain, BullX NEO delivers everything you need:</p>
+        <ol>
+            <li><strong>Speed:</strong> Powered by Solana for fast and low-fee trades</li>
+            <li><strong>Tools:</strong> Advanced analytics, Pump.fun dashboards, and real-time updates</li>
+            <li><strong>Flexibility:</strong> Trade across multiple wallets and chains seamlessly</li>
+        </ol>
+        <p>Whether you’re new to trading or a memecoin pro, BullX simplifies the process while keeping you ahead of the curve.</p>
+        <p><strong>Ready to trade smarter and faster? <a href="https://www.bullxneo.com/register">Register on BullX now</a> and save 10% on fees!</strong></p>
+    </section>
+    `

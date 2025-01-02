@@ -64,7 +64,7 @@ const Category: React.FC<Props> = ({ categories, title }) => {
                                 />
                             )}
                             <div className='w-[45px] border-box bg-[#ffffff1f]  border-2  border-[#ffffff14]  rounded-[50%] h-[45px] relative flex items-center justify-center right-[10%]'>
-                                {categories.length}
+                                {category.projects.length}
                             </div>
                         </div>
                     </a>

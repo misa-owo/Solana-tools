@@ -3,9 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useMemo, useState } from "react";
 import categories from "../../data/categories";
-import Image from "next/image";
 import Project from "@/components/ui/project";
-import { ArrowRight } from "lucide-react";
 import Contact from "@/components/contact";
 
 export default function Home() {
@@ -58,9 +56,7 @@ export default function Home() {
       <div className="relative overflow-hidden block fit-content px-[10%]">
         <div className="w-screen min-h-screen spiral block absolute -top-[50vh]">
         </div>
-        <div >
-          <GuideSection />
-          <ToolsSection />
+        <div className="pb-40">
           <Contact/>
         </div>
       </div>
@@ -68,70 +64,3 @@ export default function Home() {
   );
 }
 
-
-const GuideSection = () => {
-  return (
-    <>
-      <div className="mt-[5%] block  relative text-white w-full   bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-xl p-6 md:p-12 shadow-xl">
-        <div>
-          <p className="border-[1px] border-solid text-xs w-fit px-4 py-1 text-[#d3bef4] border-[#8952e0] rounded-xl">Guides</p>
-          <p className="text-xl md:text-4xl font-bold mt-4">Everything you need to trade on Solana</p>
-          <p className="text-[#abadaf] text-xs md:text-sm mt-2 "> Step-by-step guide for beginners</p>
-        </div>
-        <Button className="mt-3 bg-[#8952e0] mt-6 text-xs md:text-md">Explore our guides <span><ArrowRight /></span></Button>
-      </div>
-      <div className="flex mt-10 pb-[5%] gap-5 flex-wrap justify-center">
-        <a href="" className="relative text-white w-full md:w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
-          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
-          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
-        </a>
-        <a href="" className="relative text-white w-full md:w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
-          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
-          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
-        </a>
-        <a href="" className="relative text-white w-full md:w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
-          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
-          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
-        </a>
-        <a href="" className="relative text-white w-full md:w-[32%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
-          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
-          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
-        </a>
-      </div>
-    </>
-
-  )
-}
-
-const ToolsSection = () => {
-  return (
-    <>
-      <div className="w-full text-white text-sm mt-[10%] md:mt-[5%] text-white">
-        <p className="border-[1px] border-solid text-xs w-fit px-4 py-1 text-[#d3bef4] border-[#8952e0] rounded-xl">Tools</p>
-        <p className="mt-2 text-xl md:text-3xl font-bold mt-4">Find Solana tools for your needs</p>
-        <p className="mt-1 text-xl md:text-3xl font-bold">Popular tools categories</p>
-        <Button  className="mt-3 bg-[#8952e0] text-sm md:text-md">Explore our tools <span><ArrowRight /></span></Button>
-      </div>
-      <div className="flex mt-10 pb-[5%] gap-2 flex-wrap">
-        <a href="" className="relative text-white w-full md:w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
-          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
-          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
-        </a>
-        <a href="" className="relative text-white w-full md:w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
-          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
-          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
-        </a>
-        <a href="" className="relative text-white w-full md:w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
-          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
-          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
-        </a>
-        <a href="" className="relative text-white w-full md:w-[24%] flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
-          <Image src="/tools/bullx.jpg" className="rounded-[50%]" alt="" width={50} height={50} />
-          <p className="ml-4 font-bold">How to get started with Birdeye?</p>
-        </a>
-
-      </div>
-    </>
-
-  )
-}
