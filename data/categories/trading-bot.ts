@@ -12,7 +12,9 @@ export interface IProject {
     slug: string,
     popular?: boolean,
     content: string
-    guide?: Guide
+    guide?: Guide,
+    metaTitle: string,
+    metaDescription: string,
 }
 const tradingBots: IProject[] = [
     {
@@ -25,6 +27,8 @@ const tradingBots: IProject[] = [
         description: "BullX NEO is the ultimate Solana trading bot for memecoin traders. Fast, low fees, multi-chain support, and advanced tools to trade smarter with BullX NEO.",
         link: "https://example.com/bullx-neo",
         slug: "bullx-neo",
+        metaTitle: "What is BullX NEO?",
+        metaDescription: " BullX NEO is the ultimate Solana trading bot for memecoin traders. Fast, low fees, multi-chain support, and advanced tools to trade smarter with BullX NEO."
     },
     {
         content: trojanDescription,
@@ -35,7 +39,9 @@ const tradingBots: IProject[] = [
         category: "TELEGRAM TRADING BOTS",
         description: "Trojan on Solana is a fast, user-friendly Telegram trading bot with low fees, instant transactions, and advanced features for all traders.",
         link: "https://example.com/trojan-on-solana",
-        slug: "trojan-on-solana"
+        slug: "trojan-on-solana",
+        metaTitle: "What is Trojan on Solana?",
+        metaDescription: "Trojan on Solana is a fast, user-friendly Telegram trading bot with low fees, instant transactions, and advanced features for all traders."
     },
 ];
 
