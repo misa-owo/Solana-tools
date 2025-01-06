@@ -11,7 +11,8 @@ export default async function Category({ params }: Props) {
     const { slug } = await params;
     const category = categories.find(c => c.projects.find(project => project.slug === slug));
     const project = category?.projects.find(project => project.slug === slug);
-    const guide = project?.guide
+    const guide = project?.guide  
+    const faqs = project?.faqs
     if (!guide) {
         return null
     }
@@ -57,7 +58,7 @@ export default async function Category({ params }: Props) {
         <div className="w-full  text-white text-center text-sm flex flex-col items-center my-[5%]">
             <h1 className="mt-10 text-2xl md:text-4xl font-bold w-[50%]"> ❓</h1>
             <h1 className="mt-5 md:mb-10 text-2xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]">{project.name} FAQ</h1>
-            {guide.faqs.map(guide => <FAQ {...guide} key={guide.title}/>)}
+            {faqs?.map(faq => <FAQ {...faq} key={guide.title}/>)}
         </div>
     </div >
 }

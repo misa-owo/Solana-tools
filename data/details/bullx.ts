@@ -83,3 +83,25 @@ export const bullxDescription: string = `
         <p><strong>Ready to trade smarter and faster? <a href="https://www.bullxneo.com/register">Register on BullX now</a> and save 10% on fees!</strong></p>
     </section>
     `
+export const bullXQuestionList = [
+    {
+        question: "What is BullX and how does it work?",
+        answer: "BullX is a trading bot platform operating on the Solana blockchain, designed to help traders, especially memecoin enthusiasts, execute trades efficiently. BullX NEO supports multiple blockchains like Solana, Ethereum, Binance, Base, Arbitrum, and Blast. Users manage trades through the BullX Telegram Bot while accessing advanced tools like real-time market data and portfolio tracking."
+    },
+    {
+        question: "What is a BullX NEO Access Code?",
+        answer: "The BullX NEO Access Code is a unique code that grants you access to the platform’s features. Once you join the BullX platform via Telegram, you’ll gain access to the tools and dashboard automatically. For smoother onboarding, follow the BullX NEO Tutorial."
+    },
+    {
+        question: "What are the costs associated with BullX?",
+        answer: "The costs include:\n- A 1% transaction fee per trade.\n- Use a referral link to reduce the fee to 0.9%.\n- Some promotional links offer an additional 10% discount on fees. Trading with BullX is cost-effective and beginner-friendly."
+    },
+    {
+        question: "How do I secure my funds on BullX?",
+        answer: "To ensure the safety of your funds:\n1. Download your private keys immediately after creating your account.\n2. Import the keys into a secure wallet like Phantom.\n3. Store your private keys securely and never share them."
+    },
+    {
+        question: "What advanced features does BullX NEO offer?",
+        answer: "BullX NEO enhances your trading experience with tools such as:\n- **Pump Vision**: Discover trending Pump.Fun tokens and track token migrations.\n- **Token Explorer**: Similar to Dex Screener, it helps you track trending tokens and analyze their stats.\n- **Audit Reports**: Check for contract safety, renouncement status, and top holder distribution.\n- **Automated Trading**: Set up auto strategies to buy or sell at specified prices.\n- **Portfolio Tracking**: Monitor profits, losses, and active trades across multiple chains.\nThese features make BullX suitable for both beginners and advanced users."
+    }
+];

@@ -41,7 +41,6 @@ export interface Guide {
     description: string,
     question: Question
     steps: Step[],
-    faqs: Question[]
 }
 
 interface Question {

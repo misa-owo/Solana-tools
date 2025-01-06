@@ -34,6 +34,8 @@ export default function RootLayout({
 
 const navLinks = [
   { link: "/categories" ,name: "Categories" ,},
+  { link: "/guides" ,name: "Guides" },
+  { link: "/blogs" ,name: "Blogs" },
 ]
 
 

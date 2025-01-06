@@ -61,3 +61,33 @@ export const trojanDescription: string = `
         <p>The Trojan Telegram bot is decentralized, automated, and user-friendly making it the ideal Telegram trading bot for all traders. If you are after chasing short-term gains, diversification of a portfolio, or simply in search of a better way to trade, Trojan On Solana is fully equipped with the set of tools for all levels of traders. It perfectly balances simplicity and power to make sure that one can confidently trade with efficiency. Sign up today and be a part of the future in decentralized trading with the Trojan SOL Trading Bot.</p>
     </section>
     `
+export const trojanFaqsQuestionsList = [
+    {
+        question: "The bot has a charge of 1% per buy or sell. If you were referred, the fee is 0.9%. The Trojan Trading Bot collects fees in SOL and deducts them on its own.",
+        answer: "The bot charges 1% per buy or sell. For referred users, the fee is 0.9%. Fees are collected in SOL and deducted automatically."
+    },
+    {
+        question: "Does Trojan on Solana feature an anti-MEV feature?",
+        answer: "Yes, Trojan Trading Bot includes an Anti-MEV feature. It protects your transactions from front-running and sandwich attacks for a safer trade."
+    },
+    {
+        question: "Is Trojan On Solana Suitable for Beginners?",
+        answer: "Absolutely, the bot is designed with a simple and intuitive interface perfect for beginners. Even if you're new to cryptocurrency trading, you'll find the Trojan Trading Bot Guide easy to follow."
+    },
+    {
+        question: "What are some advanced features of Trojan on Solana?",
+        answer: "Advanced tools included in Trojan Trading Bot are:\n- Stop-Loss and Take Profit Orders: Automatically set your risk and profit targets.\n- Dollar-Cost Averaging Tool: Manage market ups and downs easily.\n- Instant Buy Mode: Execute trades immediately without further confirmation."
+    },
+    {
+        question: "Can I use the bot for other blockchains?",
+        answer: "Currently, Trojan on Solana is designed exclusively for Solana tokens. However, it includes features like the ETH ⇔ SOL Bridge to enable swaps between Ethereum and Solana tokens."
+    },
+    {
+        question: "How Do I Stay Updated on Trending Tokens?",
+        answer: "The Trending Tokens bot feature allows you to stay updated with popular tokens within the Solana ecosystem, helping you make profitable trades early."
+    },
+    {
+        question: "What is Token22 and what does it support?",
+        answer: "Token22 is the new standard for Solana tokens. Trojan On Solana fully supports Token22, enabling support for the newest projects and technologies via the Trojan Telegram Bot."
+    }
+];
