@@ -35,7 +35,6 @@ export default function RootLayout({
 const navLinks = [
   { link: "/categories" ,name: "Categories" ,},
   { link: "/guides" ,name: "Guides" },
-  { link: "/blogs" ,name: "Blogs" },
 ]
 
 
@@ -60,8 +59,8 @@ const Header = () => {
       justify-between
       z-2
       before:pointer-events-none">
-      <div className="w-fit md:w-3/12 flex justify-between md:justify-end">
-        <Image src={"/blast.avif"} width={35} height={28} alt="Logo" />
+      <div className="w-fit md:w-3/12 flex justify-start ">
+       <p className="font-bold">TradingBots</p>
       </div>
       <div className="flex justify-center gap-8 items-center md:w-6/12">
         {navLinks.map(navLink => <a key={navLink.name} href={navLink.link} className="text-xs cursor-pointer">{navLink.name}</a>)}
