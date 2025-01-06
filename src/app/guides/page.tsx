@@ -9,7 +9,7 @@ import { IProject } from '../../../data/categories/trading-bot'
 const Guides = () => {
 
   const popular = useMemo(() => {
-    return categories.flatMap(category => category.projects).filter(project => project.popular)
+    return categories.filter(category => category.title !== "All").flatMap(category => category.projects).filter(project => project.popular)
   }, [])
   return (
     <div className='px-[10%]'>
@@ -35,9 +35,6 @@ const Guides = () => {
       </div>
 
       <Guide title='Popular Guides' projects={popular} />
-      <Guide title='Tool Guides' projects={popular} />
-      <Guide title='Airdrop Guides' projects={popular} />
-      <Guide title='All Guides' projects={popular} />
     </div>
   )
 }
@@ -52,7 +49,7 @@ interface Props {
   return <div className='mt-[10%]'>
     <p className='text-white text-xl md:text-3xl font-bold'>{title}</p>
     <div className='flex mt-10 gap-4 flex-wrap'>
-      {projects.map(project => <a key={project.name} href="" className="relative text-white w-full md:w-[32%] shadow-[#8952e0]/10  flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6  shadow-xl">
+      {projects.map(project => <a key={project.name} href={`/guides/${project.slug}`} className="relative text-white w-full md:w-[32%] shadow-[#8952e0]/10  flex items-center bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6  shadow-xl">
         <Image src={project.logo} className="rounded-[50%]" alt="" width={50} height={50} />
         <p className="ml-4 text-sm md:text-md font-bold">How to get started with {project.name}?</p>
       </a>)}

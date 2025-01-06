@@ -1,8 +1,6 @@
 import categories from "../../../../data/categories"
 import Image from "next/image";
 import FAQ from "@/components/faq";
-
-
 interface Props {
     params: Promise<{ slug: string }>
 }
