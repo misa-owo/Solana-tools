@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from 'next/font/google'
+import Link from "next/link";
 import Image from "next/image";
 const inter = Inter({
   subsets: ['latin'], // Ensure language support
@@ -60,7 +61,7 @@ const Header = () => {
       z-2
       before:pointer-events-none">
       <div className="w-fit md:w-3/12 flex justify-start ">
-       <p className="font-bold">TradingBots</p>
+       <Link href="/"><p className="font-bold">TradingBots</p></Link>
       </div>
       <div className="flex justify-center gap-8 items-center md:w-6/12">
         {navLinks.map(navLink => <a key={navLink.name} href={navLink.link} className="text-xs cursor-pointer">{navLink.name}</a>)}
