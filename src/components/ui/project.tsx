@@ -8,12 +8,12 @@ interface Props {
     paid: boolean, 
     category: string,
     description: string,
-    //link: string,
+    link: string,
     popular?: boolean,
     slug: string
 }
 
-const Project: React.FC<Props> = ({name, paid, description, logo, slug, link}) => {
+const Project: React.FC<Props> = ({name, paid, description, logo, slug}) => {
   return (
     <div  className="relative w-11/12 md:w-[32%] bg-[linear-gradient(to_bottom_left,_rgba(255,_255,_255,_0.04),_transparent)] border-[#00000014] rounded-md p-6 shadow-xl">
       <p style={{ borderColor: paid ? "#8852e0" : "#0ea371", backgroundColor: paid ? "#8852e0" : "#0ea371" }} className="absolute right-5 top-5 font-bold uppercase text-white text-xs p-1 px-2 md:px-3 rounded-xl text-white border-[1px] border-solid">{paid ? "Paid" : "Free"}</p>
