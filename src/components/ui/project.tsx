@@ -8,7 +8,7 @@ interface Props {
     paid: boolean, 
     category: string,
     description: string,
-    link: string,
+    //link: string,
     popular?: boolean,
     slug: string
 }
