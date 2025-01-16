@@ -8,7 +8,7 @@ const Contact = () => {
                 <p className="text-xl md:text-4xl font-bold">Stay in touch</p>
                 <p className="text-[#abadaf] text-xs md:text-sm md:mt-2 "> Get  updates regarding tools and platforms</p>
             </div>
-            <Button className="mt-4 md:mt-0 rounded-xl text-white shadow-xl md:ml-20 bg-[#8952e0] w-full md:w-fit">Subscribe</Button>
+            <Button className="mt-4 md:mt-0 rounded-xl text-white shadow-xl md:ml-20 bg-[#8952e0] w-full md:w-fit">Follow Our Twitter</Button>
         </div>
     )
 }

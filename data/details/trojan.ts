@@ -1,14 +1,14 @@
 
 export const trojanDescription: string = `
-    <img src="/socials/trojan.jpeg"/>
+    <img src="/socials/trojan.jpeg" alt="trojan telegram trading bot"/>
 
 <section>
-        <p>Discover Trojan on Solana, the cutting-edge Telegram trading bot that simplifies crypto trading with instant transactions, low fees, and advanced features like limit orders, DCA, and PnL tracking. Perfect for traders of all levels! Don’t miss out—sign up now and save 10% on fees while unlocking smarter, faster, and more profitable trades!</p>
+        <p><a href="https://trojan.app/">Trojan Bot</a> is the best cutting-edge Telegram trading bot that simplifies crypto trading with instant transactions, low fees, and advanced features like limit orders, DCA, and PnL tracking. Perfect for traders of all levels! Don’t miss out—sign up now and save 10% on fees while unlocking smarter, faster, and more profitable trades!</p>
     </section>
 
     <h2>What is Trojan on Solana?</h2>
     <section>
-        <p>The Trojan Bot on Solana is the cutting-edge solution that enables traders to interact with various dApps. The Trojan Bot provides the best user-friendly trading experiences right from within your Telegram app. This Trojan Bot utilizes Solana's high-speed blockchain for executing your trades instantly without delays. In addition, the low transaction fees of Solana significantly boost the value of Trojan Telegram bot. Trojan On Solana ensures liquidity from the most popular decentralized exchanges, such as Jupiter and Orca, and YOU always get competitive rates upon swapping tokens.</p>
+        <p><a href="https://trojan.app">Trojan Trading Bot</a> is the cutting-edge solution that enables traders to interact with various dApps. The Trojan Bot provides the best user-friendly trading experiences right from within your Telegram app. This Trojan Bot utilizes Solana's high-speed blockchain for executing your trades instantly without delays. In addition, the low transaction fees of Solana significantly boost the value of Trojan Telegram bot. Trojan On Solana ensures liquidity from the most popular decentralized exchanges, such as Jupiter and Orca, and YOU always get competitive rates upon swapping tokens.</p>
     </section>
 
     <h2>What does Trojan on Solana do?</h2>
@@ -16,7 +16,10 @@ export const trojanDescription: string = `
         <p>Trojan Trading Bot destroys the barriers that intimidate new and experienced traders. Trojan SOL Trading Bot brings trading to your fingertips and simplifies buying, selling, and swapping tokens through the Telegram app. This Trojan Telegram Bot enables users to focus on their trading strategies without having any problems with complex interfaces or technical configurations.</p>
         <p>Trojan Bot also enables users to change one cryptocurrency into another cryptocurrency without using an intermediary. That is where all sorts of centralized platforms were under criticism due to the non-transparent nature of operations and multiple serious vulnerabilities. Having direct cooperation with Jupiter, Orca, or another decentralized exchange of this level, the Trojan Telegram Bot provides full guarantees of instant transactions with strong-protection features.</p>
         <p>Trojan SOL Trading Bot solves the problems in on-chain trading, which include lack of liquidity and price slippage, through aggregation of liquidity from a wide variety of sources. Through Trojan Bot, you will get better prices with reduced risks of trade. Be it trading for quick profits or for long-term portfolio building, the Trojan Solana Bot has got the tools to reach your goals. In this cutthroat world of cryptocurrency trading, the quick and sound execution of trades puts the Trojan Solana Bot on the top.</p>
-    </section>
+   
+   
+        </section>
+
 
     <h2>What Makes Trojan On Solana Special?</h2>
     <section>
@@ -25,7 +28,7 @@ export const trojanDescription: string = `
         <p>Trojan Telegram Bot continually adds and offers new functionalities while it continuously improves the existing ones with full force. You will have the most modern means, technologies, and information to give you the upper hand in the world of trading.</p>
         <p>You can personalize your profit objectives and integrate the Trojan Bot to fit how you do your business. Be it automating your trades, having monitored markets, or just wanting to lock in your hard-earned investments; Trojan on Solana is the key.</p>
     </section>
-    <img src="/socials/trojan-1.jpeg"/>
+    <img src="/socials/trojan-1.jpeg" alt="trojan solana trading bot"/>
 
     <h2>Top Features of Trojan on Solana</h2>
     <section>
@@ -50,11 +53,11 @@ export const trojanDescription: string = `
         <ul>
             <li><strong>1% Per Transaction:</strong> This standard fee applies to all trades executed through the bot.</li>
             <li><strong>0.9% Fee:</strong> Enjoy a discount if you were referred by another user.</li>
-            <li>Additionally, new users can save 10% on fees by registering through a special link below. This cost-effective pricing makes the bot accessible to both casual and frequent traders.</li>
+            <li>Additionally, new users can save 10% on fees by signing up for access on Trojan. This cost-effective pricing makes the bot accessible to both casual and frequent traders.</li>
         </ul>
     </section>
 
-    <img src="/socials/trojan-2.jpeg" style="margin:auto"/>
+    <img src="/socials/trojan-2.jpeg" style="margin:auto" alt="trojan trading bot"/>
 
     <h2>Why choose the Trojan on Solana?</h2>
     <section>

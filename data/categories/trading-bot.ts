@@ -32,11 +32,11 @@ const tradingBots: IProject[] = [
         category: "TRADING BOTS",
         popular: true,
         guide: bullxGuide,
-        description: "BullX NEO is the ultimate Solana trading bot for memecoin traders. Fast, low fees, multi-chain support, and advanced tools to trade smarter with BullX NEO.",
-        link: "https://example.com/bullx-neo",
-        slug: "bullx-neo",
-        metaTitle: "What is BullX NEO?",
-        metaDescription: " BullX NEO is the ultimate Solana trading bot for memecoin traders. Fast, low fees, multi-chain support, and advanced tools to trade smarter with BullX NEO.",
+        description: "Get early access to BullX NEO, the fastest Solana Telegram trading bot. Trade with recommended trading bots to take advantage of low fees, faster transactions, and advanced tools.",
+        link: "https://t.me/BullxNeoBot?start=access_8TXU5IS982F",
+        slug: "bullxneo",
+        metaTitle: "BullX NEO - Fastest Solana Telegram Bot | Claim Early Access",
+        metaDescription: "Get early access to BullX NEO, the fastest Solana Telegram trading bot. Trade with recommended trading bots to take advantage of low fees, faster transactions, and advanced tools.",
         faqs: bullXQuestionList
     },
     {
@@ -47,11 +47,11 @@ const tradingBots: IProject[] = [
         popular: true,
         guide: trojanGuide,
         category: "TELEGRAM TRADING BOTS",
-        description: "Trojan on Solana is a fast, user-friendly Telegram trading bot with low fees, instant transactions, and advanced features for all traders.",
-        link: "https://example.com/trojan-on-solana",
+        description: "Start trading with Trojan Bot, the fastest trading bot for ETH and Solana. Enjoy advanced tools, low fees, and seamless trading directly from Telegram.",
+        link: "https://t.me/solana_trojanbot?start=r-tbfl156z",
         slug: "trojan-on-solana",
-        metaTitle: "What is Trojan on Solana?",
-        metaDescription: "Trojan on Solana is a fast, user-friendly Telegram trading bot with low fees, instant transactions, and advanced features for all traders.",
+        metaTitle: "Trojan Telegram Bot - Fastest Solana Trading Bot",
+        metaDescription: "Start trading with Trojan Bot, the fastest trading bot for ETH and Solana. Enjoy advanced tools, low fees, and seamless trading directly from Telegram.",
         faqs: trojanFaqsQuestionsList
     },
 ];

@@ -1,8 +1,8 @@
 
 export const bullxDescription: string = `
-    <img src="/socials/bullx.jpeg"/>
+    <img src="/socials/bullx.jpeg"/ alt="bullxneo-neo-vision">
  <section>
-        <p>Want to upgrade your memecoin trading to the next level? BullX NEO is powered by Solana's lightning-fast blockchain technology and equipped with advanced AI tools like multi-chain support, real-time analytics, and trading automation and MORE! If you are chasing the next big memecoin or want to manage multiple wallets, look no more as BullX offers everything you need to trade smarter and faster. Don’t wait—<strong><a href="https://www.bullxneo.com/register">sign up now</a></strong> to save 10% on fees and stay ahead of the game!</p>
+        <p>Want to upgrade your memecoin trading to the next level? <a href="https://bullxneo.com/">BullX NEO</a> is powered by Solana's lightning-fast blockchain technology and equipped with advanced AI tools like multi-chain support, real-time analytics, and trading automation and MORE! If you are chasing the next big memecoin or want to manage multiple wallets, look no more as BullX offers everything you need to trade smarter and faster. Don’t wait—<strong><a href="https://www.bullxneo.com/early-access">get access to BullX NEO</a></strong> to save 10% on fees and stay ahead of the game!</p>
     </section>
 
 <h2>What is BullX NEO?</h2>
@@ -40,7 +40,7 @@ export const bullxDescription: string = `
         <h3>4. Solana Blockchain Speed</h3>
         <p>With Solana, BullX delivers fast transactions, low fees, and unmatched reliability—making it the excellent Solana trading bot for traders on a budget.</p>
     </section>
-    <img src="/socials/bullx-1.jpeg"/>
+    <img src="/socials/bullx-1.jpeg" alt="bullxneo-wallet-manager"/>
 
     <h2>Key Features of BullX NEO</h2>
     <section>
@@ -59,16 +59,16 @@ export const bullxDescription: string = `
         </ol>
         <p>No more juggling platforms—BullX keeps it all in one place.</p>
     </section>
-    <img src="/socials/bullx-2.jpeg"/>
+    <img src="/socials/bullx-2.jpeg" alt="bullxneo-trading"/>
 
     <h2>How Much Does BullX NEO Cost?</h2>
     <section>
         <p>Simple and transparent pricing:</p>
         <ol>
             <li><strong>1% transaction fee</strong> on trades</li>
-            <li><strong>0.9% transaction fee</strong> if you register using a referral link</li>
+            <li><strong>0.9% transaction fee</strong> if you register using an <a href="https://bullxneo.net/early-access/">early access code</a> link</li>
         </ol>
-        <p><strong>Sign up now to save 10% on your trading fees!</strong></p>
+        <p><strong><a href="https://t.me/BullxNeoBot?start=access_8TXU5IS982F">Sign up now to save 10% on your trading fees!</a></strong></p>
     </section>
 
     <h2>Why BullX NEO is the Go-To Solana Trading Bot</h2>
@@ -80,7 +80,7 @@ export const bullxDescription: string = `
             <li><strong>Flexibility:</strong> Trade across multiple wallets and chains seamlessly</li>
         </ol>
         <p>Whether you’re new to trading or a memecoin pro, BullX simplifies the process while keeping you ahead of the curve.</p>
-        <p><strong>Ready to trade smarter and faster? <a href="https://www.bullxneo.com/register">Register on BullX now</a> and save 10% on fees!</strong></p>
+        <p><strong>Ready to trade smarter and faster? <a href="https://t.me/BullxNeoBot?start=access_8TXU5IS982F">Register on BullX now</a> and save 10% on fees!</strong></p>
     </section>
     `
 export const bullXQuestionList = [
