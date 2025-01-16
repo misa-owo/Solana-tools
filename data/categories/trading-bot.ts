@@ -33,7 +33,7 @@ const tradingBots: IProject[] = [
         popular: true,
         guide: bullxGuide,
         description: "Get early access to BullX NEO, the fastest Solana Telegram trading bot. Trade with recommended trading bots to take advantage of low fees, faster transactions, and advanced tools.",
-        link: "https://t.me/BullxNeoBot?start=access_8TXU5IS982F",
+        link: "#",
         slug: "bullxneo",
         metaTitle: "BullX NEO - Fastest Solana Telegram Bot | Claim Early Access",
         metaDescription: "Get early access to BullX NEO, the fastest Solana Telegram trading bot. Trade with recommended trading bots to take advantage of low fees, faster transactions, and advanced tools.",
