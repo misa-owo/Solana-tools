@@ -1,6 +1,6 @@
 import { Guide } from "../types";
 export const bullxGuide: Guide = {
-    title: "How to Get Started with BullX NEO (Access Code: access_O8WUWM126ZA)",
+    title: "How to Get Started with BullX NEO",
     logo: "https://example.com/bullx-logo.png",
     accesscode: "",
     link: "",
