@@ -20,9 +20,9 @@ export const bullxGuide: Guide = {
     steps: [{
         image: "/tools/bullx_step1.jpeg",
         details: {
-            title: "Join BullX and Create Your Account",
+            title: "Start Bot and Use Access Code: access_O8WUWM126ZA",
             paragraph: [
-                "Click on the Start using BullX button below to launch the BullX Telegram Bot.",
+                "Click on the start button on the top, and if asked use the access code above.",
                 "If you already have Telegram installed, the app will open and display the BullX Telegram Bot. Click the Start button.",
                 "Follow the prompts in the chat to automatically create your BullX account.",
                 "Complete the setup process to gain full access to BullX NEO features."
