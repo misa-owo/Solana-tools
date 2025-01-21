@@ -3,6 +3,8 @@ import { Guide } from "../types";
 export const trojanGuide: Guide = {
     title: "How to Get Started with Trojan on Solana",
     logo: "https://example.com/trojan-logo.png",
+    accesscode: "",
+    link: "",
     description: 
         "The Trojan Solana Trading Bot Tutorial will help you dive into the world of Solana trading with ease. " +
         "Designed as a Telegram-based tool, Trojan Trading Bot streamlines on-chain trading in an easy and effective way for everyone. " +
