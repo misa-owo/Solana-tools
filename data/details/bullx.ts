@@ -68,7 +68,7 @@ export const bullxDescription: string = `
             <li><strong>1% transaction fee</strong> on trades</li>
             <li><strong>0.9% transaction fee</strong> if you register using an <a href="https://bullxneo.net/early-access/">early access code</a> link</li>
         </ol>
-        <p><strong><a href="https://t.me/BullxNeoBot?start=access_8TXU5IS982F">Sign up now to save 10% on your trading fees!</a></strong></p>
+        <p><strong><a href="https://t.me/BullxNeoBot?start=access_O8WUWM126ZA">Sign up now to save 10% on your trading fees!</a></strong></p>
     </section>
 
     <h2>Why BullX NEO is the Go-To Solana Trading Bot</h2>
@@ -80,7 +80,7 @@ export const bullxDescription: string = `
             <li><strong>Flexibility:</strong> Trade across multiple wallets and chains seamlessly</li>
         </ol>
         <p>Whether you’re new to trading or a memecoin pro, BullX simplifies the process while keeping you ahead of the curve.</p>
-        <p><strong>Ready to trade smarter and faster? <a href="https://t.me/BullxNeoBot?start=access_8TXU5IS982F">Register on BullX now</a> and save 10% on fees!</strong></p>
+        <p><strong>Ready to trade smarter and faster? <a href="https://t.me/BullxNeoBot?start=access_O8WUWM126ZA">Register on BullX now</a> and save 10% on fees!</strong></p>
     </section>
     `
 export const bullXQuestionList = [

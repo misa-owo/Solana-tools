@@ -11,8 +11,8 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: "Trading Tools",
-  description: "A hub to learn about all trading tools",
+  title: "Find the Best Solana, Telegram & AI Bots | TradingBots.net",
+  description: "Learn about the fastest Solana, Telegram, and AI trading bots to elevate your crypto and memecoin trades. Unlock tools for smarter, faster, and more efficient trading today!",
 };
 
 export default function RootLayout({
