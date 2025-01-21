@@ -1,9 +1,12 @@
 import { Guide } from "../types";
 export const bullxGuide: Guide = {
-    title: "How to Get Started with BullX NEO",
+    title: "How to Get Started with BullX NEO (Access Code: ",
     logo: "https://example.com/bullx-logo.png",
+    accesscode: "test",
+    link: "",
     description:
         "BullX is a trading bot platform operating on the Solana blockchain, designed specifically for traders, " +
+        "Use access code:" +
         "especially those focused on memecoins. Through the BullX Telegram Bot, users can seamlessly execute trades, " +
         "manage portfolios, and explore trading opportunities across multiple chains. This guide provides a step-by-step " +
         "tutorial to help you access BullX NEO and start trading with ease.",

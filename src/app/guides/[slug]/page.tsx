@@ -1,6 +1,8 @@
 import categories from "../../../../data/categories"
 import Image from "next/image";
 import FAQ from "@/components/faq";
+import { Send } from "lucide-react";
+import Link from "next/link";
 interface Props {
     params: Promise<{ slug: string }>
 }
@@ -16,15 +18,22 @@ export default async function Category({ params }: Props) {
     }
     return <div className='px-[10%]'>
         <div className="w-full  text-white text-center text-sm flex flex-col items-center relative">
-            <p className="mt-[10%] bg-[#ffffff14] w-fit m-auto px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
             <Image src={project.logo} width={100} height={100} alt={project.name} className=" mt-10 rounded-[50%]" />
             <h1 className="mt-4 md:mt-10 text-2xl w-full md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-9/12 md:w-[50%]"> {guide.title}</h1>
             <p className="text-[#abadaf]  text-sm md:text-xl mt-2 md:mt-10  w-full md:w-8/12">{guide.description} </p>
         </div>
+        <div className="w-full  text-white text-center text-sm flex flex-col items-center md:mb-0 mb-[3%] mt-[3%]">
+        <p className="flex items-center bg-[#26513a] hover:bg-[#26513a] text-white border-[#459c6e] border-[1px] rounded-xl px-6 py-1 shadow-xl">
+  <Send className="mr-2 text-white" />
+  <Link href={project?.link || "/"} target="_blank" className="text-white">Join {project?.name} with Telegram!</Link>
+</p>
+</div>
         <div className="w-full  text-white text-center text-sm flex flex-col items-center my-[5%]">
             <h1 className="mt-5 md:mt-10 text-2xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-full md:w-[50%]"> {guide.question.title}</h1>
             <p className="text-[#abadaf] text-sm md:text-xl mt-2 md:mt-10 w-full md:w-8/12">{guide.question.paragraph} </p>
+
         </div>
+        
         {guide.steps.map((step, index) =>
             <div key={step.details.title} className="flex justify-between mb-[5%] items-center flex-wrap" style={{ flexDirection: index % 2 === 0 ? "row-reverse" : "row" }}>
                 <div className="w-full md:w-6/12 mb-10 md:mb-0">
@@ -53,6 +62,12 @@ export default async function Category({ params }: Props) {
                 </div>
             </div>)
         }
+                    <div className="w-full  text-white text-center text-sm flex flex-col items-center md:mb-0 mb-[3%] mt-[3%]">
+        <p className="flex items-center bg-[#26513a] hover:bg-[#26513a] text-white border-[#459c6e] border-[1px] rounded-xl px-6 py-1 shadow-xl">
+  <Send className="mr-2 text-white" />
+  <Link href={project?.link || "/"} target="_blank" className="text-white">Join {project?.name} with Telegram!</Link>
+</p>
+</div>
         <div className="w-full  text-white text-center text-sm flex flex-col items-center my-[5%]">
             <h1 className="mt-10 text-2xl md:text-4xl font-bold w-[50%]"> ❓</h1>
             <h1 className="mt-5 md:mb-10 text-2xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] w-[50%]">{project.name} FAQ</h1>

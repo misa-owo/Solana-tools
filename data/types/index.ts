@@ -38,6 +38,8 @@ export type IContent = ImageHeader | ImageCarousel | DirectLink | DetailsCompone
 export interface Guide {
     title: string;
     logo: string;
+    accesscode: string;
+    link: string;
     description: string,
     question: Question
     steps: Step[],
