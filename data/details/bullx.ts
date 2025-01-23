@@ -2,18 +2,18 @@
 export const bullxDescription: string = `
     <img src="/socials/bullx.jpeg"/ alt="bullxneo-neo-vision">
  <section>
-        <p>Want to upgrade your memecoin trading to the next level? <a href="https://bullxneo.com/">BullX NEO</a> is powered by Solana's lightning-fast blockchain technology and equipped with advanced AI tools like multi-chain support, real-time analytics, and trading automation and MORE! If you are chasing the next big memecoin or want to manage multiple wallets, look no more as BullX offers everything you need to trade smarter and faster. Don’t wait—<strong><a href="https://www.bullxneo.com/early-access">get access to BullX NEO</a></strong> to save 10% on fees and stay ahead of the game!</p>
+        <p>Want to upgrade your memecoin trading to the next level? <a href="https://bullxneo.com/">BullX NEO</a> is powered by Solana's lightning-fast blockchain technology and equipped with advanced AI tools like multi-chain support, real-time analytics, and trading automation and MORE! If you are chasing the next big memecoin or want to manage multiple wallets, look no more as BullX offers everything you need to trade smarter and faster. Don’t wait just get <strong><u><a href="https://bullxneoaccesscode.io/">access to BullX NEO</a></u></strong> to save 10% on fees and stay ahead of the game!</p>
     </section>
 
 <h2>What is BullX NEO?</h2>
     <section>
-        <p>BullX NEO is a multi-chain trading platform powered by the Solana blockchain. It offers a seamless way to trade memecoins and other tokens while keeping fees low and transactions lightning-fast. Unlike other bots, BullX combines:</p>
+        <p><a href="https://bullxneo.com">BullX NEO</a> is a multi-chain trading platform powered by the Solana blockchain. It offers a seamless way to trade memecoins and other tokens while keeping fees low and transactions lightning-fast. Unlike other bots, BullX combines:</p>
         <ol>
             <li>A Telegram trading bot for easy access on-the-go</li>
             <li>Real-time analytics for smarter decisions</li>
             <li>Multi-chain, multi-wallet capabilities for smooth trading</li>
         </ol>
-        <p>Whether you’re a memecoin enthusiast or just getting started, BullX NEO has your back.</p>
+        <p>Whether you’re a memecoin enthusiast or just <a href="https://bullxneo.net">getting started with BullX NEO</a>, they have your back.</p>
     </section>
 
     <h2>What Makes BullX NEO Special?</h2>
@@ -66,7 +66,7 @@ export const bullxDescription: string = `
         <p>Simple and transparent pricing:</p>
         <ol>
             <li><strong>1% transaction fee</strong> on trades</li>
-            <li><strong>0.9% transaction fee</strong> if you register using an <a href="https://bullxneo.net/early-access/">early access code</a> link</li>
+            <li><strong>0.9% transaction fee</strong> if you register using an <a href="https://bullxneoaccesscode.io/">early access code</a> link</li>
         </ol>
         <p><strong><a href="https://t.me/BullxNeoBot?start=access_O8WUWM126ZA">Sign up now to save 10% on your trading fees!</a></strong></p>
     </section>
