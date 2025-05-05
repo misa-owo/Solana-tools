@@ -20,7 +20,7 @@ const Guides = () => {
           <p className="mt-[10%] bg-[#ffffff14] w-fit m-auto px-2 md:px-6 text-xs font-semibold  py-1  rounded-xl  border-[2px] border-[#ffffff14] shadow-xl">Support Us and Help Us Grow! Your Backing Means Everything! 🤩</p>
           <h1 className="mt-10 text-4xl md:text-6xl text-transparent bg-clip-text font-bold bg-[linear-gradient(to_right_bottom,_rgb(255,255,255)_30%,_rgba(255,255,255,0.6))] md:w-[50%]"> Guides
           </h1>
-          <h2 className="text-[#abadaf] mt-5 md:text-xl w-9/12 md:w-5/12">Your Ultimate guide for the Latest Solana Tools and dapps</h2>
+          <h2 className="text-[#abadaf] mt-5 md:text-xl w-9/12 md:w-5/12">Your Ultimate guide for the Latest Solana Bots, Tools, and Platforms.</h2>
         </div>
       </div>
 

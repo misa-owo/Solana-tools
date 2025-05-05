@@ -82,11 +82,13 @@ const Footer = () => {
   return (
     <footer className="flex px-[10%] pt-[10%] pb-10 text-xs text-[#abadaf] bg-[#0e1012]">
       <div className="w-1/2">
-        <Image src={"/blast.avif"} width={35} height={35} alt="logo" />
-        <p className="mt-3">Your Complete Guide to Solana Tools and Dapps</p>
+      <div className="w-fit md:w-3/12 flex justify-start ">
+        <Link href="/"><p className="font-bold">TradingBots</p></Link>
+      </div>
+        <p className="mt-3">Your Complete Guide to Solana Bots, Tools, and Platforms</p>
         <div className="flex gap-3 mt-4">
           <a href="" target="_blank">
-            <Image src={"socials/x.svg"} width={30} height={30} alt="x" />
+            <Image src={"/socials/x.svg"} width={30} height={30} alt="x" />
           </a>
         </div>
       </div>

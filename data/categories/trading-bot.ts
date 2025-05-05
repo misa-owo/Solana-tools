@@ -51,7 +51,7 @@ const tradingBots: IProject[] = [
     {
         content: trojanDescription,
         name: "Trojan On Solana",
-        logo: "/tools/trojan.jpg",
+        logo: "/tools/trojan.jpeg",
         paid: false,
         popular: true,
         guide: trojanGuide,

@@ -8,7 +8,7 @@ export const trojanDescription: string = `
 
     <h2>What is Trojan on Solana?</h2>
     <section>
-        <p><a href="https://trojan.app">Trojan Trading Bot</a> is the cutting-edge solution that enables traders to interact with various dApps. The Trojan Bot provides the best user-friendly trading experiences right from within your Telegram app. This Trojan Bot utilizes Solana's high-speed blockchain for executing your trades instantly without delays. In addition, the low transaction fees of Solana significantly boost the value of Trojan Telegram bot. Trojan On Solana ensures liquidity from the most popular decentralized exchanges, such as Jupiter and Orca, and YOU always get competitive rates upon swapping tokens.</p>
+        <p><a href="https://trojan.app">Trojan Trading Bot</a> is the cutting-edge solution that enables traders to interact with various meme coins using the bot. The Trojan Bot provides the best user-friendly trading experiences right from within your Telegram app. This Trojan Bot utilizes Solana's high-speed blockchain for executing your trades instantly without delays. In addition, the low transaction fees of Solana significantly boost the value of Trojan Telegram bot. Trojan On Solana ensures liquidity from the most popular decentralized exchanges, such as Jupiter and Orca, and YOU always get competitive rates upon swapping tokens.</p>
     </section>
 
     <h2>What does Trojan on Solana do?</h2>
